@@ -1,0 +1,17 @@
+defaults:
+- logging: default
+- model: mlp
+- optim: sgd
+- _self_
+
+dataset: 'usps'         # Dataset to use for the training. Either 'usps' or 'fmnist'
+batch_size: 8           # Batch size to use for SGD/CGD
+max_epochs: 40          # Maximum number of epochs in training
+gpus: []                # GPUs to use, e.g. cuda:0
+parallel: 1             # How many models to run in parallel
+perturb_strat: null     # Define strategy for perturbation, e.g. 'max_chaos'
+perturb_eps: [1e-1]     # List of epsilons of model perturbation in case parallel > 1
+eps_eigh: 0.0           # If >0, stabilizes eigh calculation of matrices A by adding A + eps_eigh * I
+eigenthings_path: null  # Path from which to reload stored eigenthings
+seed: null              # If provided, will load model with seed specified
+debug: false            # If set, toggles debugging options and dataset

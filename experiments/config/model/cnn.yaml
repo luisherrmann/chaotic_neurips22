@@ -1,0 +1,4 @@
+name: 'cnn'
+base_channels: 4        # Base dimension of the CNN channels
+block_cnt: 1            # Number of -> conv -> activation -> blocks in CNN
+activation: 'relu'

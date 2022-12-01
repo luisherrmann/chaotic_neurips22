@@ -1,0 +1,13 @@
+defaults:
+- logging: default
+- model: mlp
+- optim: sgd
+- _self_
+
+dataset: 'usps'         # Dataset to use for the training. Either 'usps' or 'fmnist'
+batch_size: 8           # Batch size to use for SGD/CGD
+max_epochs: 40          # Maximum number of epochs in training
+gpus: []                # GPUs to use, e.g. cuda:0
+lyapunov: false         # Will calculate Lyapunov exponents if log_eigenthings is set
+eigenthings_path: null  # Path from which to reload stored eigenthings
+seed: null              # If provided, will load model with seed specified

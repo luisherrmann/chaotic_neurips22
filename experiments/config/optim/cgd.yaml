@@ -1,0 +1,11 @@
+name: 'cgd'                       # Either sgd or cgd
+momentum: 0                       # Momentum to use for SGD or CGD optimizer
+lr: 0.001                         # Trainer learning rate
+k: null                           # If optimizer is cgd, will only prune k eigenvalues
+prune_global: false               # If set, will first train the model normally and then prune it using the directions provided.
+prune_global_checkpoint: null     # If set, will prune directions provided in checkpoint
+prune_set: 'chaotic'              # Set of Hessian eigenvalues from which to prune
+prune_k: 'top_abs'                # Pruning rule
+prune_start: 0                    # The step at which to start pruning
+noise: false                      # Will generate random noise on pruned dimensions instead of pruning
+noise_fac: null                   # Level of noise to use on pruned dimensions

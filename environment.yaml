@@ -1,0 +1,26 @@
+name: chaotic_nips22
+channels:
+  - pytorch
+  - pyg
+  - conda-forge
+  - defaults
+dependencies:
+  - addict
+  - cudatoolkit=11.3
+  - hydra-core
+  - matplotlib
+  - memory_profiler
+  - neptune-client>=0.16.1
+  - numpy
+  - libgcc
+  - omegaconf
+  - pip
+  - pytest
+  - pytorch==1.11.0
+  - pytorch-lightning>=1.6.3
+  - pytorch-sparse
+  - scipy
+  - sortednp
+  - torchaudio==0.11.0
+  - torchvision==0.12.0
+  - tqdm

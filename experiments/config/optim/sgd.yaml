@@ -1,0 +1,3 @@
+name: 'sgd'             # Either sgd or cgd
+momentum: 0             # Momentum to use for SGD or CGD optimizer
+lr: 0.001               # Trainer learning rate

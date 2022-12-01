@@ -1,0 +1,18 @@
+log_eigenthings: true         # Logs eigenpairs and related info
+log_subsim: false             # Logs subspace similarity
+log_lyapunov: true            # Logs eigenpairs of Lyapunov matrix
+log_lyapunov_subsim: false    # Log subspace similarity for global chaos directions
+log_freq: 1                   # Log metrics every log_freq step
+plot_eigs_every: 0            # After how many steps to log plots of eigenvalue spectra
+plot_mats_every: 0            # After how many steps to log plots of matrices
+plot_trajectories: false      # If true, will plot chaotic trajectories
+save_eigenthings: false       # Save lyapunov eigenspectrum after training
+save_lyapunov_at: null        # Epoch at which to store the Lyapunov matrix
+save_trajectories: false      # If true, will save trajectories
+offline: false                # Disables logging on neptune
+t_lya_subsim: null            # Disables Subsim else give list of timesteps
+lyapunov_perturb_eigs: null   # Define path for lyapunov eigenvalues for perturbation
+save_hessian_dist_every: 0    # Set to zero for not saving the eigenvals of the hessian every n steps
+signal_noise_window: 0        # Set to zero for not saving the signal noise
+logger_type: 'neptune'        # Either 'neptune' or 'tensorboard'
+tags: []                      # Flags to use for logging
